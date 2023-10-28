@@ -1,11 +1,12 @@
 body{
   margin: 0px;
   background-color:whitesmoke;
-  
+  margin-bottom: 100px;
 }
 main{
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 100px;
 }
 header img{
   width: 100%;
@@ -70,4 +71,60 @@ li a:hover:not(.active) {
 
 .active {
   background-color: #04AA6D;
+}
+
+/* Donate Button*/
+
+.donate-button {
+  background-color: #325680;
+  border: 1px solid #325680;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.donate-button:hover {
+  background-color: #1a3a80;
+}
+
+/* Headers */
+
+h1, h2, h3 {
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 47px;
+  font-weight: bold;
+  margin-top: -1;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+
+/* Columns */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
