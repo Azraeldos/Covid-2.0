@@ -114,8 +114,6 @@ h3 {
   font-size: 18px;
 }
 
-
-
 .column {
   float: left;
   width: 33.33%;
@@ -123,9 +121,14 @@ h3 {
   height: 300px; 
 }
 
-
 .row:after {
   content: "";
   display: table;
   clear: both;
+}
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: rgb(0, 42, 211);
+  color: rgb(255, 255, 255);
 }
