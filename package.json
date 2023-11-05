@@ -1,0 +1,21 @@
+{
+  "name": "covid-answers",
+  "version": "1.0.0",
+  "description": "covid informational page",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "covid"
+  ],
+  "author": "Covid Answers",
+  "license": "ISC",
+  "dependencies": {
+    "csv": "^6.3.5",
+    "csv-parse": "^5.5.2",
+    "csv-parser": "^3.0.0",
+    "node-fetch": "^3.3.2"
+  }
+}
