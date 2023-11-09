@@ -24,14 +24,6 @@
       * {
         box-sizing: border-box;
       }
-      /* Create three equal columns that floats next to each other */
-      /* Clear floats after the columns */
-/*      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-      */
       img{
         max-width: 100%;
         max-height: 100%;
@@ -48,6 +40,7 @@
       <div class ="picture1">
       <img src="images/Pictures for Covid app/covid19VaxCard.jpg" alt="A COVID-19 vaccine card. /logo">
       </div>
+      <div class="navbar-container">
       <nav class="navbar">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -58,14 +51,18 @@
           <li><a href="donatePge.html">Donations</a></li>
             </ul>
       </nav>
+    </div>
     </header>
 
     <!--Main Content-->
     <h1>Vaccinations</h1>
     <main class="site-content">
-      <p class="answer">
+      <!--Blurb on Vaccines-->
+      <p class="flex-item">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae voluptates tempora qui saepe tenetur impedit sed repellat nesciunt, necessitatibus deserunt sint aperiam voluptatibus, eum cupiditate molestias recusandae odit error aliquid.
       </p>
+
+      <!--FAQ for Vaccine Content-->
       <ul class="accordion">
         <li>
             <input type="checkbox" name="accordion" id="first" >
