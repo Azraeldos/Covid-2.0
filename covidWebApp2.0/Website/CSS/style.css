@@ -1,12 +1,15 @@
 body{
   margin: 0px;
   background-color:whitesmoke;
-  margin-bottom: 100px;
+  margin-bottom: -100px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 main{
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 100px;
+  /*margin-bottom: 100px;*/
 }
 header img{
   width: 100%;
@@ -41,24 +44,27 @@ header img{
 .navbar li{
   float: left;
 }
-body {margin:0;}
 
-ul {
+.navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(0,0,113);
   position: fixed;
   top: 0;
   width: 100%;
 }
 
-li {
+.links li {
   float: left;
 }
 
-li a {
+.links li a {
+  transition: all 0.32s ease 0s;
+}
+
+.links li a {
   display: block;
   color: white;
   text-align: center;
@@ -66,13 +72,14 @@ li a {
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
+.links li a:hover:not(.active) {
   background-color: #111;
 }
 
 .active {
   background-color: #04AA6D;
 }
+
 
 /* Donate Button*/
 
@@ -85,10 +92,12 @@ li a:hover:not(.active) {
   font-weight: bold;
   padding: 10px 20px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .donate-button:hover {
   background-color: #1a3a80;
+  transition: all 0.32s ease 0s;
 }
 
 /* External Link Button */
@@ -137,13 +146,94 @@ h3 {
   display: table;
   clear: both;
 }
+
 .picture2 {
   width: auto;
   height: 100px;
 }
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 5px;
+  padding: 1em;
   background-color: rgb(0, 42, 211);
   color: rgb(255, 255, 255);
+}
+
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-content {
+  flex: 1;
+}
+
+.footer {
+  flex: none;
+}
+
+/* ACCORDION STYLE*/
+
+.accordion {
+  margin: 60px auto;
+  width: 600px;
+
+}
+
+.accordion li{
+  list-style: none;
+  width: 100%;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  background: whitesmoke;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+              -6px -6px 10px -1px rgba(255,255,255,0.15);
+}
+
+.accordion li label{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+label::before {
+  content: '+';
+  margin-right: 10px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.accordion .content {
+  background-color: whitesmoke;
+  color: rgb(0, 0, 0);
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="checkbox"]:checked+label+.content {
+  max-height: 400px;
+  padding: 10px 10px 20px;
+  background-color:whitesmoke;
+}
+
+.accordion input[type="checkbox"]:checked+label::before{
+  content: '-';
+}
+
+.answer {
+  background-color:#A7C7E7;
 }

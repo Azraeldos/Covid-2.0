@@ -6,6 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <style>
+    body {
+        font-family: 'Raleway';font-size: 22px;
+        font-weight: bold;
+    }
+    </style>
     <title>Vaccines</title>
     <style>
       p {
@@ -18,19 +25,13 @@
         box-sizing: border-box;
       }
       /* Create three equal columns that floats next to each other */
-      .column {
-        float: left;
-        width: 33.33%;
-        padding: 10px;
-        height: 300px; /* Should be removed. Only for demonstration */
-      }
-      
       /* Clear floats after the columns */
-      .row:after {
+/*      .row:after {
         content: "";
         display: table;
         clear: both;
       }
+      */
       img{
         max-width: 100%;
         max-height: 100%;
@@ -42,7 +43,7 @@
   </style>
   </head>
 
-  <body>
+  <body class="site">
     <header>
       <div class ="picture1">
       <img src="images/Pictures for Covid app/covid19VaxCard.jpg" alt="A COVID-19 vaccine card. /logo">
@@ -61,49 +62,50 @@
 
     <!--Main Content-->
     <h1>Vaccinations</h1>
-    <main>
-
-      <!--First row of three columns-->
-      <div class="row">
-
-        <div class="column" style="background-color:white;">
-          <h2>Why Get Vaccinated?</h2>
-            <p>
-              Getting vaccinated against COVID-19 is one of the most important 
-              things you can do to protect yourself and your loved ones from the 
-              virus. COVID-19 vaccines are safe and effective at preventing 
-              serious illness, hospitalization, and death. They have been 
-              rigorously tested and monitored, and they are millions of times 
-              safer than getting sick with COVID-19.
-            </p>
-        </div>
-
-        <div class="column" style="background-color:white;">
-          <h2>What Vaccinations are Available?</h2>
-            <p>
-              There are three vaccinations authorized by the FDA. They are the 
-              Pfizer-BioNTech, Moderna, and Novavax COVID-19 vaccines. The first 
-              two are mRNA vaccines and the latter is a protein subunit vaccine.
-              
-            </p>
-        </div>
-
-        <div class="column" style="background-color:white;">
-          <h2>Are Vaccines Trustworthy?</h2>
-            <p>
-              Yes! Although the Pfizer-BioNTech and Moderna vaccines were developed
-              rapidly, both companies have research mRNA vaccination since 2008 and 
-              2010, respectively.
-            </p>
-        </div>    
-      </div>
-
-      <!--Second row of three columns-->
-      <div class="row">
-
-        <div class="column" style="background-color:white;">
-          <h2>What if I can't afford a vaccination?</h2>
-            <p>
+    <main class="site-content">
+      <p class="answer">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae voluptates tempora qui saepe tenetur impedit sed repellat nesciunt, necessitatibus deserunt sint aperiam voluptatibus, eum cupiditate molestias recusandae odit error aliquid.
+      </p>
+      <ul class="accordion">
+        <li>
+            <input type="checkbox" name="accordion" id="first" >
+            <label for="first">Why Get Vaccinated?</label>
+            <div class="content">
+                <p class="answer">Getting vaccinated against COVID-19 is one of the most important 
+                  things you can do to protect yourself and your loved ones from the 
+                  virus. COVID-19 vaccines are safe and effective at preventing 
+                  serious illness, hospitalization, and death. They have been 
+                  rigorously tested and monitored, and they are millions of times 
+                  safer than getting sick with COVID-19.
+                </p>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" name="accordion" id="second">
+            <label for="second">What Vaccinations are Available?</label>
+            <div class="content">
+                <p class="answer">There are three vaccinations authorized by the FDA. They are the 
+                  Pfizer-BioNTech, Moderna, and Novavax COVID-19 vaccines. The first 
+                  two are mRNA vaccines and the latter is a protein subunit vaccine.
+                </p>
+            </div>
+        </li>
+        <li>
+            <input type="checkbox" name="accordion" id="third">
+            <label for="third">Are Vaccines Trustworthy?</label>
+            <div class="content">
+                <p class="answer">
+                  Yes! Although the Pfizer-BioNTech and Moderna vaccines were developed
+                  rapidly, both companies have research mRNA vaccination since 2008 and 
+                  2010, respectively.
+              </p>
+            </div>
+        </li>
+        <li>
+          <input type="checkbox" name="accordion" id="fourth">
+          <label for="fourth">What if I can't afford a vaccination?</label>
+          <div class="content">
+            <p class="answer">
               Almost all insurance providers will cover the cost of your COVID-19
               vaccine. Although federal funding has ended for COVID-19 vaccination, 
               they are still free to the uninsured if you book through <b>My Turn</b>.
@@ -113,11 +115,13 @@
                 My Turn
               </button>
             </a>
-        </div>
-
-        <div class="column" style="background-color:white;">
-          <h2>Where can I get vaccinated?</h2>
-            <p>
+          </div>
+        </li>
+        <li>
+          <input type="checkbox" name="accordion" id="fifth">
+          <label for="fifth">Where can I get vaccinated?</label>
+          <div class="content">
+            <p class="answer">
               Vaccination appointments can be either made through your healthcare
               provider. Alternatively, you can book an appointment through <b>My Turn</b>
             </p>
@@ -126,11 +130,13 @@
                 My Turn
               </button>
             </a>
-        </div>
-
-        <div class="column" style="background-color:white;">
-          <h2>Can you give me more information on vaccines?</h2>
-            <p>
+          </div>
+        </li>
+        <li>
+          <input type="checkbox" name="accordion" id="sixth">
+          <label for="sixth">Can you give me more information on vaccines?</label>
+          <div class="content">
+            <p class="answer">
               More detailed information including research articles on all aspects of COVID-19 
               can be found on the CDC website.
             </p>
@@ -139,24 +145,17 @@
                 CDC COVID-19 Vaccinations
               </button>
             </a>
-        </div>    
-
-      </div>
+          </div>
+        </li>
+    </ul>
     </main>
 
-  <br> 
-  <br>
   <!--Footer Content-->
-  <footer>
-    <p1> <br>
-      <br>
-      <br>
-      <br>
-      <div class = "picture2" >
+  <footer class="footer">
+      <div class = "picture2" style="display:flex; flex-direction: column; align-items: center;">
         <img src="images/Pictures for Covid app/newLogo.png" alt="/Logo">
-          </div>
-      <p1> © 2023 Covid-Answers<p1>
-        <br>
+        <p1> © 2023 Covid-Answers<p1>
+      </div>
   </footer>
 </body>
 </html>
