@@ -76,42 +76,53 @@
      <h2 style="text-align: center;">Risk Assessment Survey</h2>
      <form action="actionPge.php(placeHolder)" method="GET" style="text-align: center;">
       <div>
-      <label> PlaceHolder1</label>
+      <label> Please select sex</label>
         <br>
-      <input list="Q1" name="Q1" placeholder=" placeholder" required>
+      <input list="Q1" name="Q1" placeholder=" Select" required>
       <datalist id="Q1">
-        <option value="option">
-        <option value="option">
-        <option value="option">
-        <option value="option">
-        <option value="option">
+        <option value="Male">
+        <option value="Female">
+        <option value="Prefer not to say">
       </datalist>
     
     </div>
     <br>
     <div>
-      <label>PlaceHolder2</label>
+      <label>Please enter birthday</label>
       <br>
-      <input list="Q2" name="Q2" placeholder="placeholder" required>
-      <datalist id="Q2">
-        <option value="option">
-        <option value="option">
-        <option value="option">
-        <option value="option">
-        <option value="option">
+      <div>
+        <label for="bDate"></label>
+        <input type="date" id="bDate" name="bDate">
+      </div>
+    </div>
+    <br>
+    <div>
+      <label>Have you been diagnosed with diabetes?</label>
+      <br>
+      <input list="Q3" name="Q3" placeholder="Select" required>
+      <datalist id="Q3">
+        <option value="Yes">
+        <option value="No">
       </datalist>
     </div>
     <br>
     <div>
-      <label>PlaceHolder3</label>
+      <label>Do you wear a mask in public?</label>
       <br>
-      <input list="Q3" name="Q3" placeholder="placeholder" required>
-      <datalist id="Q3">
-        <option value="option">
-        <option value="option">
-        <option value="option">
-        <option value="option">
-        <option value="option">
+      <input list="Q4" name="Q4" placeholder="Select" required>
+      <datalist id="Q4">
+        <option value="Yes">
+        <option value="No">
+      </datalist>
+    </div>
+    <br>
+    <div>
+      <label>Have you received the Covid-19 vaccine?</label>
+      <br>
+      <input list="Q5" name="Q5" placeholder="Select" required>
+      <datalist id="Q5">
+        <option value="Yes">
+        <option value="No">
       </datalist>
     </div>
     <br>
