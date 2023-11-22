@@ -1,0 +1,442 @@
+<!doctype html>
+
+<html lange="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <style>
+      p {
+        background-color: white;
+      }
+      h2{
+        background-color: white;
+      }
+      
+      * {
+        box-sizing: border-box;
+      }
+      img{
+        max-width: 100%;
+        max-height: 100%;
+        
+      }
+      
+      .picture1 {
+        width: auto;
+        height: 600px;
+        text-align: center;
+      }
+      
+      </style>
+  </head>
+  <body>
+    <header>
+      <div class = "picture1">
+      <img src="images/Pictures for Covid app/masksBanner.jpg" alt="Three people of different nationalities wearing masks. /logo"/>
+      </div>
+      <!--Navbar-->
+      <nav class="navbar">
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#More Information">More Information</a></li>
+          <li><a href="#Testing">Testing</a></li>
+          <li><a href="#Vaccinations">Vaccinations</a></li>
+          <li><a href="#Volunteer">Volunteer</a></li>
+          <li><a href="#Donations">Donations</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="Home">
+    <h1>Covid-Answers</h1>
+    <main>
+      <div class="row">
+        <div class="column" style="background-color:white;">
+          <img src="images/Pictures for Covid app/deathByAge.png" alt="Pie chart of Deaths by age">
+          <h2>How does your age affect you?</h2>
+        <p>Age plays a key role in the human body's response to Covid-19. Elderly individuals are the more susceptible to death caused Covid-19 due to having a weaker immune system. While younger individuals are more likely to survive they are just as susceptible to death due how quickly Covid-19 attacks the immune system.</p>
+        </div>
+        <div class="column" style="background-color:white;">
+          <img src="images/Pictures for Covid app/Rvalue.png" alt="Month R-value for Covid. /excel graph"/>
+          <h2>What is an R value?</h2>
+          <p>R value stands for Reproduction and it is in relation to how fast something spreads. In this example the R value is being measured to help predict how contagious Covid-19 has been. When the R value reaches 1.00 then an outbreak has occurred meaning the amount of cases of Covid-19 are exponential in the area.</p>
+      </div>
+      <div class="column" style="background-color:white;">
+      <img src="images/Pictures for Covid app/monthlyConfirmCases09-10.png" alt="Monthly Confirmed Cases for COVID-19 September 3rd- October 3rd">
+      <h2>Confirmed cases of Covid-19 - September/October</h2>
+      <p>Keeping track of Covid-19 cases in your area allows you to be more prepared for any possible outbreaks. The line chart above shows the number of positive Covid-19 cases in the San Bernardino area. While positive cases of Covid-19 may be low it is important to remember that the R value plays a key role in determining how fast an outbreak can occur.</p>
+      <br><br>
+    </div>    
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+     </main>
+     <br>
+     <!-- Quiz -->
+     <h2 style="text-align: center;">Risk Assessment Survey</h2>
+     <form action="actionPge.php(placeHolder)" method="GET" style="text-align: center;">
+      <div>
+      <label> Please select sex</label>
+        <br>
+      <input list="Q1" name="Q1" placeholder=" Select" required>
+      <datalist id="Q1">
+        <option value="Male">
+        <option value="Female">
+        <option value="Prefer not to say">
+      </datalist>
+    </div>
+    <br>
+    <div>
+      <label>Please enter birthday</label>
+      <br>
+      <div>
+        <label for="bDate"></label>
+        <input type="date" id="bDate" name="bDate">
+      </div>
+    </div>
+    <br>
+    <div>
+      <label>Have you been diagnosed with diabetes?</label>
+      <br>
+      <input list="Q3" name="Q3" placeholder="Select" required>
+      <datalist id="Q3">
+        <option value="Yes">
+        <option value="No">
+      </datalist>
+    </div>
+    <br>
+    <div>
+      <label>Do you wear a mask in public?</label>
+      <br>
+      <input list="Q4" name="Q4" placeholder="Select" required>
+      <datalist id="Q4">
+        <option value="Yes">
+        <option value="No">
+      </datalist>
+    </div>
+    <br>
+    <div>
+      <label>Have you received the Covid-19 vaccine?</label>
+      <br>
+      <input list="Q5" name="Q5" placeholder="Select" required>
+      <datalist id="Q5">
+        <option value="Yes">
+        <option value="No">
+      </datalist>
+    </div>
+    <br>
+    <div>
+      <input type="reset">
+    </div>
+    <div>
+      <input type="submit">
+    </div>
+     </form>
+    </div>
+     <br><br>
+     <!-- More Information Section -->
+     <div id="More Information">
+      <br>
+      <h1>More Information</h1>
+        <div class="pictureMoreInformation" style="height: 500px;width: auto; text-align: center;">
+      <img class="center-fit" src="images/Pictures for Covid app/moreInfoBanner.webp" alt="Students wearing masks in class raising their hands. /logo">
+        </div>
+      <div class="row">
+        <div class="column" style="background-color:white;">
+      <h2>What is Covid-19?</h2>
+      <p>Covid-19 is a deadly disease caused by a virus named SARS-CoV-2. It can be contagious and spread quickly depending on how quick the public are able to adapt to precautions. It is primarily transmitted through infected individuals droplets caused by sneezing and coughing. While symptoms may be similar to the common flu, Covid-19 can quickly overcome the body’s immune system leading to death.
+      </p>
+        </div>
+        <div class="column" style="background-color:white;">
+      <h2>How to wash your hands</h2>
+      <img src="images/Pictures for Covid app/handwashing infographic.jpg" alt="infographic explaining how to wash your hands effectly">
+        </div>
+      <div class="column" style="background-color:white;">
+      <h2>Symptoms</h2>
+        <p>Fever or chills</p>
+        <p>Cough</p>
+        <p>Shortness of breath or difficulty breathing</p>
+        <p>Fatigue</p>
+        <p>Muscle or body aches</p>
+        <p>Headache</p>
+      </div>
+      </div> 
+      
+    <div class="column" style="background-color:white;">
+        <h2>How to protect yourself</h2>
+        <p>To protect yourself and others from Covid-19 individuals are recommended to wear a mask in public to protect from infected droplets and reduce spread. Individuals should also wash their hands frequently as well as schedule an appointment for vaccination. In addition, social distancing is recommended to help reduce spread through infected droplets in the air.</p>
+          </div>
+          <div class="column" style="background-color:white;">
+            <h2>How to wear a mask</h2>
+             <img src="images/Pictures for Covid app/maskNew.jpg" alt="Infographic how to wear a mask properly"><br><br><br>
+            <br><br><br>
+            </div>
+              <div class="column" style="background-color:white;">
+            <h2>How does it spread?</h2>
+            <p>Covid-19 primarily spreads through infected droplets transmitted through the air and surfaces. A common way Covid-19 transmits is through contaminated public surfaces such as handrails, door handles, and even handshakes. When individuals do not wear masks in public they increase their likelihood of exposure through infected droplets produced by infected individuals.</p>
+            </div>   
+    
+          </div>
+     </div>
+     <br>
+     <!-- Testing Section -->
+     <div id="Testing">
+      <br>
+      <h1>Testing</h1>
+      <div class ="pictureTesting" style="width: auto; height: 500px;text-align: center;">
+        <img src="images/Pictures for Covid app/covidTestKit.webp" alt="A COVID-19 test kit. /logo">
+        </div>
+      <div class="row">
+        <div class="column" style="background-color:white;">
+          <h2>Importance of Testing</h2>
+
+          <p>
+            Testing for COVID-19 is important because it can help to identify and 
+            stop the spread of the virus, even among people who are asymptomatic.
+            Asymptomatic people are still able to spread the virus to others.
+          </p>
+
+        </div>
+        <div class="column" style="background-color:white;">
+          <h2>Types of Tests</h2>
+          <p>
+            Two main types of COVID-19 tests exist: Polymerase Chain Reaction (PCR) 
+            tests and antigen tests. PCR tests are more reliable and the type you 
+            are most likely to receive at a testing site.
+          </p>
+          <p>
+            A healthcare provider or yourself can collect your sample, which will 
+            then be transported to a laboratory for testing. Results are usually 
+            available within 3 days.
+          </p>
+        </div>
+        <div class="column" style="background-color:white;">
+          <h2>Should You Get Tested?</h2>
+          <p>
+            The current recommendation from the CDC is to get tested immediately 
+            symptoms are present. 
+          </p>
+          <p>
+            If you are asymptomatic but have been exposed to COVID-19, wait at
+            least 5 full days after your exposure before taking a test.
+          </p>
+        </div>    
+      </div>
+
+      <!--2nd row of three columns-->
+      <div class="row">
+        <div class="column">
+          <h2>Where can I get tested?</h2>
+          <p>
+            My Turn allows you to search for local testing by ZIP code:
+          </p>
+
+          <a href="https://myturn.ca.gov/testing.html" target="_blank">
+            <button type="button" class="donate-button">
+              My Turn Testing
+            </button>
+          </a>
+          <p>
+            Every household can also order four free COVID-19 tests delivered to
+            your home from the U.S. Government.
+          </p>
+          <a href="https://www.covid.gov/tests" target="_blank">
+            <button type="button" class ="donate-button" href="https://www.covid.gov/tests">
+              COVID-19 Tests
+            </button>
+          </a>
+
+        </div>
+        <div class="column">
+          <h2>I tested positive. Now what?</h2>
+          <p>
+            <b>Isolate yourself from others.</b> Stay home and away from other people, 
+            including those you live with. If you must be around others, wear a mask.
+          </p>
+          <p>
+            <b>Monitor your symptoms.</b>If your symptoms worsen, seek medical attention.
+          </p>
+          <p>
+            <b>Contact your heatlhcare provider.</b>They can discuss your treatment 
+            options and help to develop a plan to recover safely.
+          </p>
+        </div>
+        <div class="column">
+          <h2>I tested negative. Now what?</h2>
+          <p>
+            A negative COVID-19 test means only that the test did not detect the virus.
+            PCR tests are 95% accurate, which means you could still be infected.
+            The current FDA guidelines suggest repeating the test after 48 hours for 
+            at least three total tests (test 3 times!).
+          </p>
+        </div>
+      </div>
+     </div>
+     <br>
+     <!--Vaccination Section -->
+     <div id="Vaccinations">
+      <br>
+      <h1>Vaccinations</h1>
+      <div class ="pictureVaccinations" style="width: auto;height: auto;text-align: center;">
+        <img src="images/Pictures for Covid app/covid19VaxCard.jpg" alt="A COVID-19 vaccine card. /logo">
+        </div>
+      <main class="site-content">
+        <!--Blurb on Vaccines-->
+        <!--FAQ for Vaccine Content-->
+        <ul class="accordion">
+          <li>
+              <input type="checkbox" name="accordion" id="first" >
+              <label for="first">Why Get Vaccinated?</label>
+              <div class="content">
+                  <p class="answer">Getting vaccinated against COVID-19 is one of the most important 
+                    things you can do to protect yourself and your loved ones from the 
+                    virus. COVID-19 vaccines are safe and effective at preventing 
+                    serious illness, hospitalization, and death. They have been 
+                    rigorously tested and monitored, and they are millions of times 
+                    safer than getting sick with COVID-19.
+                  </p>
+              </div>
+          </li>
+          <li>
+              <input type="checkbox" name="accordion" id="second">
+              <label for="second">What Vaccinations are Available?</label>
+              <div class="content">
+                  <p class="answer">There are three vaccinations authorized by the FDA. They are the 
+                    Pfizer-BioNTech, Moderna, and Novavax COVID-19 vaccines. The first 
+                    two are mRNA vaccines and the latter is a protein subunit vaccine.
+                  </p>
+              </div>
+          </li>
+          <li>
+              <input type="checkbox" name="accordion" id="third">
+              <label for="third">Are Vaccines Trustworthy?</label>
+              <div class="content">
+                  <p class="answer">
+                    Yes! Although the Pfizer-BioNTech and Moderna vaccines were developed
+                    rapidly, both companies have research mRNA vaccination since 2008 and 
+                    2010, respectively.
+                </p>
+              </div>
+          </li>
+          <li>
+            <input type="checkbox" name="accordion" id="fourth">
+            <label for="fourth">What if I can't afford a vaccination?</label>
+            <div class="content">
+              <p class="answer">
+                Almost all insurance providers will cover the cost of your COVID-19
+                vaccine. Although federal funding has ended for COVID-19 vaccination, 
+                they are still free to the uninsured if you book through <b>My Turn</b>.
+              </p>
+              <a href="https://myturn.ca.gov/en_US.html" target="_blank">
+                <button type="button" class = "donate-button" href="https://myturn.ca.gov/">
+                  My Turn
+                </button>
+              </a>
+            </div>
+          </li>
+          <li>
+            <input type="checkbox" name="accordion" id="fifth">
+            <label for="fifth">Where can I get vaccinated?</label>
+            <div class="content">
+              <p class="answer">
+                Vaccination appointments can be either made through your healthcare
+                provider. Alternatively, you can book an appointment through <b>My Turn</b>
+              </p>
+              <a href="https://myturn.ca.gov/en_US.html" target="_blank">
+                <button type="button" class = "donate-button" href="https://myturn.ca.gov/">
+                  My Turn
+                </button>
+              </a>
+            </div>
+          </li>
+          <li>
+            <input type="checkbox" name="accordion" id="sixth">
+            <label for="sixth">Can you give me more information on vaccines?</label>
+            <div class="content">
+              <p class="answer">
+                More detailed information including research articles on all aspects of COVID-19 
+                can be found on the CDC website.
+              </p>
+              <a href="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/index.html" target="_blank">
+                <button type="button" class = "donate-button" href="https://myturn.ca.gov/">
+                  CDC COVID-19 Vaccinations
+                </button>
+              </a>
+            </div>
+          </li>
+      </ul>
+     </div>
+     <!--Volunteer Section  -->
+     <div id="Volunteer">
+      <br>
+      <h1>Volunteer</h1>
+      <div class = "pictureVolunteer" style="height: 500px; width: auto;text-align: center;">
+        <img src="images/Pictures for Covid app/volunteerColorfulHands.png" alt="Different colored hands touching white wall. /logo">
+        </div>
+      <div class="row">
+        <div class="column" style="background-color:white;">
+          <h2>American Red Cross</h2>
+          <p>The Red Cross is always in need of blood donors. Blood donations are especially important during the pandemic.</p>
+          <a href="https://www.redcross.org/" target="_blank"><button type="button" class="donate-button">Volunteer</button></a>
+        </div>
+
+        <div class="column" style="background-color:white;">
+          <h2>Meals on Wheels</h2>
+          <p>Meals on Wheels provides meals to homebound people, such as those that are immunocompromised during the pandemic. Volunteers can help by cooking, packing, and/or delivering meals.</p>
+          <a href="https://www.mealsonwheelsamerica.org/" target="_blank"><button type="button" class="donate-button">Volunteer</button></a>
+        </div>
+
+        <div class="column" style="background-color:white;">
+          <h2>San Bernardino County Volunteer Hub</h2>
+          <p>San Bernardino County is always looking for volunteers to help locally with general support.</p>
+          <a href="https://hr.sbcounty.gov/volunteerhub/" target="_blank"><button type="button" class="donate-button">Volunteer</button></a>
+        </div>    
+      </div>
+
+     </div>
+     <br>
+     <!-- Donations -->
+     <br>
+     <div id="Donations">
+      <br>
+      <h1>Donations</h1>
+      <div class = "pictureDonation" style="height: 500px; width: auto;text-align: center;">
+        <img src="images/Pictures for Covid app/donateItems.jpg" alt="A picture of a box with donation written across among other donation items. /logo">
+          </div>
+      <div class="row">
+
+        <div class="column" style="background-color:white;">
+          <h2>Inland Empire Community Foundation</h2>
+          <p>A local non-profit organization dedicated to improving the lives of people in the Inland Empire. Has a number of funds established to support the community during COVID-19.</p>
+          <a href="https://inlandempire.fcsuite.com/erp/donate/list" target="_blank"><button type="button" class="donate-button">Donate Now</button></a>
+        </div>
+  
+        <div class="column" style="background-color:white;">
+          <h2>Feeding America Riverside-San Bernardino</h2>
+          <p>Feeding America distributes food to over 400 food banks and pantries in San Bernardino County.</p>
+          <a href="https://www.feedingamericaie.org/donate" target="_blank"><button type="button" class="donate-button">Donate Now</button></a>
+        </div>
+  
+        <div class="column" style="background-color:white;">
+          <h2>Salvation Army</h2>
+          <p>The Inland Empire Division of the Salvation Army provides food distribution, rental assistance, and homeless services to people in need in the Inland Empire.</p>
+          <a href="https://give-sdm.salvationarmy.org/give/173402/#!/donation/checkout" target="_blank"><button type="button" class="donate-button">Donate Now</button></a>
+        </div>    
+  
+      </div>
+     </div>
+     <br>
+     <footer>
+    <p1> <br>
+      <br>
+      <br>
+      <br>
+      <div class = "picture2" >
+      <img src="images/Pictures for Covid app/newLogo.png" alt="/Logo">
+        </div>
+        <p1> © 2023 Covid-Answers<p1>
+          <br>
+  </footer>
+  </body>
+</html>
